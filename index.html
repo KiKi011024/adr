@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="pantalla-bienvenida" class="seccion activa">
+        <h1>H-A-P-P-Y__B-I-R-T-H-D-A-Y </h1>
+        <h2>¡Tengo una sorpresa para ti! 🎁</h2>
+        <h3>(espero que no sospeches nada y que te guste)</h3>
+        <button id="btn-empezar">clic aquí</button>
+    </div>
+
+    <div id="pantalla-opciones" class="seccion oculta">
+        <h2>Tu decides por dónde empezar 🎁✨</h2>
+        <div class="contenedor-items">
+            <button id="btn-carta" class="item">🖼️🖼️ the gallery</button>
+            <button id="btn-galeria" class="item">🎂🎂 the cake</button>
+            <button id="btn-torta" class="item">✉️✉️ the letter</button>
+        </div>
+    </div>
+
+    <div id="seccion-carta" class="seccion oculta">
+        <h2>Para mi querida amiga Adrii...</h2>
+        <h3>(la galeria esta en otro botón, buen intento jsjjs)</h3>
+        <!-- Contenedor para el texto de la máquina de escribir -->
+        <div id="texto-maquina" class="estilo-maquina"></div>
+        
+        <button class="btn-volver">¿vamos con otra sorpresa?</button>
+    </div>
+
+    <div id="seccion-galeria" class="seccion oculta">
+        <h2>Nuestros momentos capturados 🖼️</h2>
+        <h3>(puedes hacerle zoom :)</h3>
+        <h3>(la torta esta en otro botón, continua  jsjjs)</h3>
+        <div class="galeria-contenedor">
+            <div class="foto-polaroid">
+                <img src="https://picsum.photos/300/300?random=1" alt="Recuerdo 1">
+                <p>¡Aquel día increíble!</p>
+            </div>
+            
+            <div class="foto-polaroid">
+                <img src="https://picsum.photos/300/300?random=2" alt="Recuerdo 2">
+                <p>----</p>
+            </div>
+            
+            <div class="foto-polaroid">
+                <img src="https://picsum.photos/300/300?random=3" alt="Recuerdo 3">
+                <p>---</p>
+            </div>
+        </div>
+
+        <button class="btn-volver">¿vamos con otra sorpresa?</button>
+    </div>
+
+    <div id="seccion-torta" class="seccion oculta">
+        <h2>¡Pide un deseo y apaga las velas! 🎂</h2>
+        <h3>(aprovecha a pedir el deseo antes)</h3>
+        
+        <div class="contenedor-torta">
+            <div class="torta">
+                <div class="velas">
+                    <div class="vela"><div class="llama"></div></div>
+                    <div class="vela"><div class="llama"></div></div>
+                    <div class="vela"><div class="llama"></div></div>
+                </div>
+                <div class="piso-superior"></div>
+                <div class="piso-inferior"></div>
+            </div>
+        </div>
+
+        <button id="btn-apagar">Ya tienes tu deseo... ¿verdad? Ahora si sopla las velas</button>
+        <br>
+        <button class="btn-volver">¿vamos con otra sorpresa?</button>
+    </div>
+
+    <audio id="audio-celebracion" src="musica.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
