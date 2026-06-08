@@ -62,19 +62,55 @@ button:hover {
     margin-top: 20px;
 }
 
+/* --- Estilos para la línea decorativa --- */
+.separador-vintage {
+    width: 60%;
+    max-width: 350px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #8b5a2b, transparent);
+    margin: 10px auto 30px auto;
+}
+
+/* --- Estilos mejorados para los botones del menú --- */
 .item {
-    font-size: 1.2rem;
-    padding: 20px 30px;
-    background-color: #fdf5e6; /* Fondo tipo postal */
-    color: #4a3b32;
-    border: 2px dashed #8b5a2b; /* Borde con estilo de sello o ticket antiguo */
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    font-size: 1.3rem;
+    padding: 15px 35px;
+    background-color: #fdf5e6;
+    color: #5c3a21;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    cursor: pointer;
+    
+    /* El truco del marco doble vintage */
+    border: 2px solid #8b5a2b;
+    border-radius: 6px;
+    box-shadow: 
+        0 0 0 4px #fdf5e6, /* Borde interior invisible */
+        0 0 0 5px #8b5a2b, /* Borde exterior fino */
+        4px 4px 10px rgba(0,0,0,0.15); /* Sombra para darle volumen */
+        
+    transition: all 0.3s ease;
+    
+    /* Una textura muy sutil de puntos */
+    background-image: radial-gradient(#e6d5b8 10%, transparent 10%); 
+    background-size: 10px 10px;
 }
 
 .item:hover {
-    background-color: #e6d5b8;
-    color: #2a201b;
-    border-style: solid; /* El borde se vuelve sólido al pasar el cursor */
+    transform: translateY(-5px); /* Se levanta al pasar el ratón */
+    background-color: #f4ebd0;
+    box-shadow: 
+        0 0 0 4px #fdf5e6, 
+        0 0 0 5px #8b5a2b, 
+        6px 8px 15px rgba(0,0,0,0.25); /* La sombra crece */
+}
+
+/* Para que el título destaque más */
+#pantalla-opciones h2 {
+    font-size: 2.2rem;
+    color: #4a3b32;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 

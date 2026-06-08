@@ -100,7 +100,7 @@ btnApagar.addEventListener('click', () => {
     llamas.forEach(llama => llama.classList.add('apagada'));
     
     // 2. Cambiar el texto del botón
-    btnApagar.innerText = "¡Deseo pedido! ✨";
+    btnApagar.innerText = "¡Deseo pedido! Pero para que se cumpla, presiona varias veces ✨";
     btnApagar.style.backgroundColor = "#5c3a21";
 
     // 3. ¡Reproducir la música! 🎵
